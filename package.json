@@ -1,0 +1,11 @@
+{
+    "name": "anuj-vishwakarma-portfolio",
+    "version": "1.0.0",
+    "description": "Portfolio website for Anuj Vishwakarma",
+    "scripts": {
+        "start": "http-server -c-1"
+    },
+    "dependencies": {
+        "http-server": "^14.1.1"
+    }
+}
