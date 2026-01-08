@@ -335,6 +335,8 @@ $(document).ready(function () {
 	if (!sessionStorage.getItem("visited")) {
 		let count = 0;
 		const counterElement = $(".preloader-counter .count");
+		const loaderProgress = $(".loader-progress");
+		const dashArray = 301.6; // 2 * Math.PI * 48
 
 		const counterInterval = setInterval(() => {
 			count += Math.floor(Math.random() * 10) + 1;
@@ -345,13 +347,21 @@ $(document).ready(function () {
 				setTimeout(() => {
 					preloader.addClass("loaded");
 					setTimeout(() => {
-						preloader.fadeOut(500);
+						preloader.fadeOut(800);
 						sessionStorage.setItem("visited", "true");
-					}, 800);
+					}, 1000);
 				}, 500);
 			}
+
+			// Update text counter
 			counterElement.text(count.toString().padStart(2, '0'));
-		}, 50);
+
+			// Update circular progress
+			if (loaderProgress.length) {
+				const offset = dashArray - (count / 100) * dashArray;
+				loaderProgress.css("stroke-dashoffset", offset);
+			}
+		}, 60);
 	} else {
 		preloader.hide();
 	}
