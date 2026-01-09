@@ -313,6 +313,19 @@ $(document).ready(function () {
 					var el = document.querySelectorAll(".odometer")[i];
 					el.innerHTML = el.getAttribute("data-odometer-final");
 				}
+
+				// Animate Skill Circles
+				$(".skill-circle-wrapper").each(function () {
+					const $wrapper = $(this);
+					const percent = $wrapper.data("percent");
+					const $circle = $wrapper.find(".skill-circle-progress");
+					const radius = 45;
+					const circumference = 2 * Math.PI * radius;
+					const offset = circumference - (percent / 100) * circumference;
+
+					$circle.css("stroke-dashoffset", offset);
+					$wrapper.addClass("animated");
+				});
 			}
 		});
 	});
