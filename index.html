@@ -18,6 +18,11 @@
    <link rel="stylesheet" href="assets/css/aos.css">
    <!--<< Main.css >>-->
    <link rel="stylesheet" href="assets/css/main.css">
+   <script>
+      if (sessionStorage.getItem("visited")) {
+         document.documentElement.classList.add('preloader-none');
+      }
+   </script>
 </head>
 
 <!--<< Body Area >>-->
@@ -305,115 +310,149 @@
             </h2>
          </div>
          <div class="row g-xxl-4 g-4 justify-content-between">
-            <div class="col-lg-1 d-lg-block d-none">
-               <div class="edu-lining d-lg-block d-none">
-                  <div class="edu-l1"><i class="bi bi-dot"></i></div>
-                  <div class="edu-l1"><i class="bi bi-dot"></i></div>
-                  <div class="edu-l1"><i class="bi bi-dot"></i></div>
+            <!-- Left Side: Work Experience -->
+            <div class="col-lg-6 col-md-12">
+               <div class="education-inner-column">
+                  <!-- Experience Item 1 -->
+                  <div class="education-item-row">
+                     <div class="edu-dot-wrap">
+                        <div class="edu-l1"><i class="bi bi-dot"></i></div>
+                     </div>
+                     <div class="education-item cmn-shadow round8 w-100">
+                        <div class="educa-head">
+                           <h4>
+                              <a href="#" class="white">
+                                 AI/ML Intern - Infosys Springboard 6.0
+                              </a>
+                           </h4>
+                           <span class="pra-clr">
+                              ( December 2025 - Present )
+                           </span>
+                        </div>
+                        <p class="pra-clr">
+                           Actively learning AI/ML through hands-on project work. Developing skills in Python, machine
+                           learning models, data analysis, and deployment on real-world applications.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Experience Item 2 -->
+                  <div class="education-item-row">
+                     <div class="edu-dot-wrap">
+                        <div class="edu-l1"><i class="bi bi-dot"></i></div>
+                     </div>
+                     <div class="education-item cmn-shadow round8 w-100">
+                        <div class="educa-head">
+                           <h4>
+                              <a href="#" class="white">
+                                 frontend Developer Intern - Karyanexus
+                              </a>
+                           </h4>
+                           <span class="pra-clr">
+                              ( July 2025 - December 2025 )
+                           </span>
+                        </div>
+                        <p class="pra-clr">
+                           Immersed in real-world development at KaryaNexus, leveraging React, Next.js, Tailwind CSS,
+                           and
+                           evolving with new tools to deliver impactful web solutions while sharpening my technical
+                           craft.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Experience Item 3 -->
+                  <div class="education-item-row">
+                     <div class="edu-dot-wrap">
+                        <div class="edu-l1"><i class="bi bi-dot"></i></div>
+                     </div>
+                     <div class="education-item cmn-shadow round8 w-100">
+                        <div class="educa-head">
+                           <h4>
+                              <a href="#" class="white">
+                                 Associate L1 Intern – Infotact Solutions (Web Development)
+                              </a>
+                           </h4>
+                           <span class="pra-clr">
+                              ( july 2025 - September 2025 )
+                           </span>
+                        </div>
+                        <p class="pra-clr">
+                           Entry-level web development internship focused on frontline support, basic troubleshooting,
+                           UI
+                           fixes, and real-world project contributions within a dynamic team environment.
+                        </p>
+                     </div>
+                  </div>
                </div>
             </div>
-            <div class="col-lg-5 col-md-6">
-               <div class="education-inner">
-                  <div class="education-item cmn-shadow round8">
-                     <div class="educa-head">
-                        <h4>
-                           <a href="#" class="white">
-                              Senior Web Designer, Webflow
-                           </a>
-                        </h4>
-                        <span class="pra-clr">
-                           ( 2023 - Present )
-                        </span>
+
+            <!-- Right Side: Education -->
+            <div class="col-lg-6 col-md-12">
+               <div class="education-inner-column">
+                  <!-- Education Item 1 -->
+                  <div class="education-item-row">
+                     <div class="edu-dot-wrap">
+                        <div class="edu-l1"><i class="bi bi-dot"></i></div>
                      </div>
-                     <p class="pra-clr">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                     </p>
+                     <div class="education-item cmn-shadow round8 w-100">
+                        <div class="educa-head">
+                           <h4>
+                              <a href="#" class="white">
+                                 Sigma 7.0 - APNA COLLAGE
+                              </a>
+                           </h4>
+                           <span class="pra-clr">
+                              ( March 2025 - November 2025 )
+                           </span>
+                        </div>
+                        <p class="pra-clr">
+                           Built strong foundations in DSA and full-stack development through Sigma 7.0’s practical,
+                           project-based learning. </p>
+                     </div>
                   </div>
-                  <div class="education-item cmn-shadow round8">
-                     <div class="educa-head">
-                        <h4>
-                           <a href="#" class="white">
-                              Junior Web Designer, Invision
-                           </a>
-                        </h4>
-                        <span class="pra-clr">
-                           ( July 2019 - August 2022 )
-                        </span>
+                  <!-- Education Item 2 -->
+                  <div class="education-item-row">
+                     <div class="edu-dot-wrap">
+                        <div class="edu-l1"><i class="bi bi-dot"></i></div>
                      </div>
-                     <p class="pra-clr">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                     </p>
+                     <div class="education-item cmn-shadow round8 w-100">
+                        <div class="educa-head">
+                           <h4>
+                              <a href="#" class="white">
+                                 B.Tech (AI/ML) - KIT Kanpur
+                              </a>
+                           </h4>
+                           <span class="pra-clr">
+                              ( 2022 - 2026 ) Ongoing
+                           </span>
+                        </div>
+                        <p class="pra-clr">
+                           Aspiring software developer with strong foundation in full-stack apps, enhanced by practical
+                           AI/ML skills in machine learning models and data analytics.
+                        </p>
+                     </div>
                   </div>
-                  <div class="education-item cmn-shadow round8">
-                     <div class="educa-head">
-                        <h4>
-                           <a href="#" class="white">
-                              UI/UX Designer, Apple
-                           </a>
-                        </h4>
-                        <span class="pra-clr">
-                           ( March 2016 - March 2019 )
-                        </span>
+                  <!-- Education Item 3 -->
+                  <div class="education-item-row">
+                     <div class="edu-dot-wrap">
+                        <div class="edu-l1"><i class="bi bi-dot"></i></div>
                      </div>
-                     <p class="pra-clr">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-1 d-lg-block d-none">
-               <div class="edu-lining m-auto d-lg-block d-none">
-                  <div class="edu-l1"><i class="bi bi-dot"></i></div>
-                  <div class="edu-l1"><i class="bi bi-dot"></i></div>
-                  <div class="edu-l1"><i class="bi bi-dot"></i></div>
-               </div>
-            </div>
-            <div class="col-lg-5 col-md-6">
-               <div class="education-inner">
-                  <div class="education-item cmn-shadow round8">
-                     <div class="educa-head">
-                        <h4>
-                           <a href="#" class="white">
-                              Art University - New York
-                           </a>
-                        </h4>
-                        <span class="pra-clr">
-                           ( 2006 - 2008 )
-                        </span>
+                     <div class="education-item cmn-shadow round8 w-100">
+                        <div class="educa-head">
+                           <h4>
+                              <a href="#" class="white">
+                                 Schooling - PMIC Kanpur
+                              </a>
+                           </h4>
+                           <span class="pra-clr">
+                              ( 2016 - 2022 )
+                           </span>
+                        </div>
+                        <p class="pra-clr">
+                           Completed higher secondary education focused on Mathematics, Physics, Chemistry, and
+                           self-driven
+                           computer tinkering—building a strong foundation for technical pursuits.
+                        </p>
                      </div>
-                     <p class="pra-clr">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                     </p>
-                  </div>
-                  <div class="education-item cmn-shadow round8">
-                     <div class="educa-head">
-                        <h4>
-                           <a href="#" class="white">
-                              Programming Course - Paris
-                           </a>
-                        </h4>
-                        <span class="pra-clr">
-                           ( 2005 - 2006 )
-                        </span>
-                     </div>
-                     <p class="pra-clr">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                     </p>
-                  </div>
-                  <div class="education-item cmn-shadow round8">
-                     <div class="educa-head">
-                        <h4>
-                           <a href="#" class="white">
-                              Web Design Course - London
-                           </a>
-                        </h4>
-                        <span class="pra-clr">
-                           ( 2004 - 2005 )
-                        </span>
-                     </div>
-                     <p class="pra-clr">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                     </p>
                   </div>
                </div>
             </div>
