@@ -18,11 +18,15 @@
    <link rel="stylesheet" href="assets/css/aos.css">
    <!--<< Main.css >>-->
    <link rel="stylesheet" href="assets/css/main.css">
+
 </head>
 
 <!--<< Body Area >>-->
 
 <body>
+
+
+
 
    <!--<< Preloader >>-->
    <!-- Preloader removed as per request -->
@@ -130,21 +134,20 @@
             <a href="protfolio.html" class="section-sub" data-aos="fade-down" data-aos-duration="1000">
                Blog Details
             </a>
-            <h2 class="stitle fw-500 mt-3" data-aos="fade-down" data-aos-duration="1500">
-               The art of typography in
-               web design
-            </h2>
+             <h2 class="stitle fw-500 mt-3" data-aos="fade-down" data-aos-duration="1500" id="blog-title">
+                Loading Story...
+             </h2>
             <div class="bread-head-info">
                <div class="d-flex align-items-center gap-3">
-                  <img src="assets/img/blog/jhone.png" alt="img" class="round50">
-                  <span class="pra-clr fw-400 fz-16">
-                     Jhone Deo
-                  </span>
+                  <img src="assets/img/blog/jhone.png" alt="img" class="round50" id="blog-author-image">
+                   <span class="pra-clr fw-400 fz-16" id="blog-author-name">
+                      Fetching Author...
+                   </span>
                </div>
                <div class="rline"></div>
-               <span class="pra-clr fw-400 fz-16">
-                  March 25, 2024
-               </span>
+                <span class="pra-clr fw-400 fz-16" id="blog-date">
+                   Just now
+                </span>
                <div class="rline"></div>
                <span class="pra-clr fw-400 fz-16">
                   2 Comments
@@ -155,257 +158,158 @@
    </section>
    <!--<< banner >>-->
 
+   <!-- Reading Progress Bar -->
+   <div id="reading-progress-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 4px; z-index: 10001; background: transparent;">
+      <div id="reading-progress-bar" style="height: 100%; width: 0%; background: var(--white); box-shadow: 0 0 10px rgba(255,255,255,0.5); transition: width 0.1s ease-out;"></div>
+   </div>
+
    <!--<< Blog Details >>-->
    <section class="blog-details-section pb-100">
       <div class="container">
          <div class="details-blog-wrap">
-            <div class="d-thumb w-100 mb-60">
-               <img src="assets/img/blog/blog-details1.png" alt="img" class="w-100">
+            <div class="d-thumb w-100">
+               <img src="assets/img/blog/blog-details1.png" alt="img" class="w-100" id="blog-main-image">
             </div>
-            <p class="pra-clr fw-400 mb-60">
-               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-               dolores eos qui
-               ratione quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
-               numquam eius modi
-               tempora incidunt ut labore et enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-               laboriosam,
-               nisi ut aliquid ex ea commodi consequatur? Quis autem reprehenderit a qui in ea voluptate velit esse quam
-               nihil
-               molestiae consequatur,
-            </p>
-            <div class="quoting-box mb-60">
-               <i class="bi bi-quote"></i>
-               <p class="white mt-16 mb-30">
-                  Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is
-                  occasionally
-                  circumstances occur in which toil and pains can procure him some great pleasure. To take a trivial
-                  example,
-                  which of us ever undertakes laborious physical exercise,
-               </p>
-               <span class="fz-20 fw-500 white d-block">
-                  - UI-THEMEZ
-               </span>
+            <div id="blog-content-area" class="blog-details-content pra-clr fw-400 mb-60">
+               <!-- Hashnode content will be injected here -->
             </div>
-            <p class="pra-clr fw-400 mb-60">
-               On the other hand, we denounce with righteous indignation an dislike men who are so beguiled and
-               demoralized by the
-               charms of pleasure of the moments, so blinded by desire, that they cannot foresee the pain and trouble
-               that are bound to
-               ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the
-               same as saying
-               through shrinking from toil and pain.
-            </p>
-            <div class="title-box">
-               <h3 class="white mb-30">
-                  How to update your theme
-               </h3>
-               <p class="pra-clr mb-30">
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                  magni dolores eos qui
-                  ratione quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
-                  numquam eius modi
-                  tempora incidunt ut labore et enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                  suscipit laboriosam,
-                  nisi ut aliquid ex ea commodi consequatur.
-               </p>
-               <ul class="title-listing d-grid gap-xxl-3 gap-2 mb-60">
-                  <li class="d-flex align-items-center gap-1">
-                     <i class="bi bi-dot"></i>
-                     Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                  </li>
-                  <li class="d-flex align-items-center gap-1">
-                     <i class="bi bi-dot"></i>
-                     Quis autem vel eum iure reprehenderit qui in ea voluptate molestiae consequatur,
-                  </li>
-                  <li class="d-flex align-items-center gap-1">
-                     <i class="bi bi-dot"></i>
-                     Sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </li>
-               </ul>
-               <div
-                  class="social-tag d-md-flex d-grid gap-3 align-items-center justify-content-md-between justify-content-center">
-                  <div class="d-flex justify-content-center align-items-center gap-xxl-4 gap-3">
-                     <span class="fz-20 fw-500 white">
-                        Tag:
-                     </span>
-                     <span class="pra-clr">
-                        Branding, Business
-                     </span>
-                  </div>
-                  <div class="d-flex flex-wrap justify-content-center align-items-center gap-xxl-4 gap-3">
-                     <span class="fz-20 fw-500 white">
-                        Share This:
-                     </span>
-                     <ul class="right-social-com d-flex cmn-social gap-xxl-3 gap-2 round8">
-                        <li>
-                           <a href="#">
-                              <i class="bi bi-facebook"></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#">
-                              <i class="bi bi-twitter"></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#">
-                              <i class="bi bi-behance"></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#">
-                              <i class="bi bi-globe"></i>
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
+            <!-- Like Section moved below content -->
+            <div class="like-section d-flex align-items-center">
+               <button id="like-btn">
+                  <i class="bi bi-heart"></i>
+                  <span><span id="like-count">0</span> Likes</span>
+               </button>
+            </div>
+            <div
+               class="social-tag d-md-flex d-grid gap-3 align-items-center justify-content-md-between justify-content-center">
+               <div class="d-flex justify-content-center align-items-center gap-xxl-4 gap-3">
+                  <span class="fz-20 fw-500 white">
+                     Tag:
+                  </span>
+                  <span class="pra-clr">
+                     Branding, Business
+                  </span>
                </div>
-               <div class="toom-bio cmn-shadow round8">
-                  <img src="assets/img/blog/tomm.png" alt="img" class="round50">
-                  <div class="cont">
-                     <span class="white fz-20 fw-500 d-block mb-24">
-                        About Tomm Beross
-                     </span>
-                     <p class="fz-16 pra-clr mb-30">
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni eos qui ratione
-                        quisquam est qui dolorem ipsum quia dolor sit amet,
-                     </p>
-                     <ul class="social-text d-flex">
-                        <li>
-                           <a href="#" class="pra-clr">
-                              Twitter
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" class="pra-clr">
-                              Facebook
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" class="pra-clr">
-                              Instagram
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
+               <div class="d-flex flex-wrap justify-content-center align-items-center gap-xxl-4 gap-3">
+                  <span class="fz-20 fw-500 white">
+                     Share This:
+                  </span>
+                  <ul class="right-social-com d-flex cmn-social gap-xxl-3 gap-2 round8">
+                     <li>
+                        <a href="#">
+                           <i class="bi bi-facebook"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="bi bi-twitter"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="bi bi-behance"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="bi bi-globe"></i>
+                        </a>
+                     </li>
+                  </ul>
                </div>
-               <div class="trendint-preview-next pb-100 d-flex align-items-center justify-content-between pt-100">
-                  <div class="tr-left">
-                     <span
-                        class="pra-clr cmn-shadow round100 py-3 px-4 d-inline-flex align-items-center gap-xxl-3 gap-2">
-                        Prev
-                        <img src="assets/img/blog/left-arrow.png" alt="img">
-                     </span>
-                     <span class="fz-20 d-block mt-24 fw-500 white">
-                        Exploring UI/UX Trends 2024
-                     </span>
-                  </div>
-                  <div class="tr-left">
-                     <span
-                        class="pra-clr cmn-shadow round100 py-3 px-4 d-inline-flex align-items-center gap-xxl-3 gap-2">
-                        <img src="assets/img/blog/right-arrow.png" alt="img">
-                        Next
-                     </span>
-                     <span class="fz-20 d-block mt-24 fw-500 white">
-                        Navigating the Digital Landscape
-                     </span>
-                  </div>
+            </div>
+            <div class="toom-bio cmn-shadow round8">
+               <img src="assets/img/blog/tomm.png" alt="img" class="round50">
+               <div class="cont">
+                  <span class="white fz-20 fw-500 d-block mb-24">
+                     About Tomm Beross
+                  </span>
+                  <p class="fz-16 pra-clr mb-30">
+                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                     consequuntur magni eos qui ratione
+                     quisquam est qui dolorem ipsum quia dolor sit amet,
+                  </p>
+                  <ul class="social-text d-flex">
+                     <li>
+                        <a href="#" class="pra-clr">
+                           Twitter
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="pra-clr">
+                           Facebook
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="pra-clr">
+                           Instagram
+                        </a>
+                     </li>
+                  </ul>
                </div>
-               <div class="comment-area pb-100">
-                  <h3 class="white mb-50">
-                     Comments (2)
+            </div>
+            <div class="trendint-preview-next pb-100 d-flex align-items-center justify-content-between pt-100">
+               <div class="tr-left">
+                  <span class="pra-clr cmn-shadow round100 py-3 px-4 d-inline-flex align-items-center gap-xxl-3 gap-2">
+                     Prev
+                     <img src="assets/img/blog/left-arrow.png" alt="img">
+                  </span>
+                  <span class="fz-20 d-block mt-24 fw-500 white">
+                     Discovering...
+                  </span>
+               </div>
+               <div class="tr-left">
+                  <span class="pra-clr cmn-shadow round100 py-3 px-4 d-inline-flex align-items-center gap-xxl-3 gap-2">
+                     <img src="assets/img/blog/right-arrow.png" alt="img">
+                     Next
+                  </span>
+                  <span class="fz-20 d-block mt-24 fw-500 white">
+                     Next Story...
+                  </span>
+               </div>
+            </div>
+
+
+
+            <div class="replay-wrapper">
+               <div class="mb-60">
+                  <h3 class="white mb-24">
+                     Leave a Reply
                   </h3>
-                  <div class="comment-item mb-40">
-                     <div class="thumb">
-                        <img src="assets/img/blog/nicolast1.png" alt="img">
-                     </div>
-                     <div class="content">
-                        <span class="mb-8 d-block fw-400 pra-clr">
-                           March 25, 2024
-                        </span>
-                        <span class="fz-20 fw-500 white d-block mb-10">
-                           Nicolas Jhone
-                        </span>
-                        <p class="pra-clr fz-16 mb-2">
-                           On the other hand, we denounce with righteous indignation an dislike men who are so beguiled
-                           and demoralized by the
-                           charms
-                        </p>
-                        <a href="#" class="d-flex white fs-16 align-items-center gap-1 text-uppercase">
-                           REPLY
-                           <i class="bi bi-dot"></i>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="comment-item comment-items-2">
-                     <div class="thumb">
-                        <img src="assets/img/blog/nicolast2.png" alt="img">
-                     </div>
-                     <div class="content">
-                        <span class="mb-8 d-block fw-400 pra-clr">
-                           March 25, 2024
-                        </span>
-                        <span class="fz-20 fw-500 white d-block mb-10">
-                           Casey Mallep
-                        </span>
-                        <p class="pra-clr fz-16 mb-2">
-                           On the other hand, we denounce with righteous indignation an dislike men who are so beguiled
-                        </p>
-                        <a href="#" class="d-flex white fs-16 align-items-center gap-1 text-uppercase">
-                           REPLY
-                           <i class="bi bi-dot"></i>
-                        </a>
-                     </div>
-                  </div>
+                  <p class="pra-clr fz-16">
+                     Your email address will not be published. Required fields are marked *
+                  </p>
+
                </div>
-               <div class="replay-wrapper">
-                  <div class="mb-60">
-                     <h3 class="white mb-24">
-                        Leave a Reply
-                     </h3>
-                     <p class="pra-clr fz-16">
-                        Your email address will not be published. Required fields are marked *
-                     </p>
+               <form action="#" class="reply-form">
+                  <div class="reply-grp">
+                     <textarea name="comment" rows="4" placeholder="Your Comments"></textarea>
                   </div>
-                  <form action="#" class="reply-form">
-                     <div class="reply-grp">
-                        <textarea name="comment" rows="4" placeholder="Your Comments"></textarea>
-                     </div>
-                     <div class="reply-grp">
-                        <input type="text" placeholder="Your Name*">
-                     </div>
-                     <div class="reply-grp">
-                        <input type="email" placeholder="Your Email*">
-                     </div>
-                     <div class="reply-grp">
-                        <input type="text" placeholder="Website*">
-                     </div>
-                     <div class="form-check mb-30">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                           Save my name, email, and website in this browser for the next time I comment.
-                        </label>
-                     </div>
-                     <button type="submit" class="submit-btn">
-                        Post Comments
-                     </button>
-                  </form>
-               </div>
+                  <div class="reply-grp">
+                     <input type="text" placeholder="Your Name*">
+                  </div>
+                  <div class="reply-grp">
+                     <input type="email" placeholder="Your Email*">
+                  </div>
+                  <button type="submit" class="submit-btn mt-30">
+                     Post Comments
+                  </button>
+               </form>
             </div>
          </div>
+      </div>
       </div>
    </section>
    <!--<< Blog Details >>-->
 
    <!--<<  Footer >>-->
-   <div class="footer-section check-box-style pt-100">
+   <div class="footer-section check-box-style pt-100" id="conts">
       <div class="container p-0">
          <div class="talk-text text-center " data-aos="zoom-in" data-aos-duration="1400">
-            LET’S WITH
-            TALK
+            LET’S WORK
+            TOGETHER
          </div>
-         <a href="#" class="infomail d-center cmborder round100">
+         <a href="mailto:anujvishwakarma7077@gmail.com" class="infomail d-center cmborder round100">
             anujvishwakarma7077@gmail.com
          </a>
          <div class="footer-topping-wrap check-box-style round30">
@@ -413,34 +317,48 @@
                <div class="col-xl-4 col-lg-6">
                   <div class="contact-left">
                      <p class="pra-clr fz16 pragraph-one">
-                        Great! We're excited to hear from you and
-                        let's start something special togerter. call
-                        us for any inquery.
+                        I’m always open to discussing new opportunities, collaborations, or innovative project ideas.
+                        Let’s connect and build something impactful.
                      </p>
                      <div class="contact-infos">
-                        <a href="#">
-                           Valentin, Street Road 24, New York,
-                           USA - 67452
+                        <a href="https://maps.google.com/?q=Kanpur,Uttar+Pradesh,India" target="_blank"
+                           class="d-flex align-items-center gap-3">
+                           <i class="bi bi-geo-alt"></i>
+                           <span>Kanpur (Uttar Pradesh), India, 208008</span>
                         </a>
-                        <a href="#">
-                           (+02) 574 - 328 - 301
+                        <a href="tel:+916386109984" class="d-flex align-items-center gap-3">
+                           <i class="bi bi-telephone"></i>
+                           <span>+91 6386109984</span>
                         </a>
-                        <a href="#">
-                           anujvishwakarma7077@gmail.com
+                        <a href="mailto:anujvishwakarma7077@gmail.com"
+                           class="d-flex align-items-center gap-3 text-lowercase">
+                           <i class="bi bi-envelope"></i>
+                           <span>anujvishwakarma7077@gmail.com</span>
                         </a>
                      </div>
                      <div class="footer-social">
-                        <a href="#0" class="fsocial d-inline-flex align-items-center justify-content-center">
-                           Facebook
+                        <a href="https://www.linkedin.com/in/anuj-vishwakarma-84845133b/" target="_blank"
+                           class="fsocial d-inline-flex align-items-center justify-content-center gap-2">
+                           <i class="bi bi-linkedin"></i>
+                           <span>LinkedIn</span>
                         </a>
-                        <a href="#0" class="fsocial d-inline-flex align-items-center justify-content-center">
-                           Twitter
+                        <a href="https://github.com/anujvishwakarma07" target="_blank"
+                           class="fsocial d-inline-flex align-items-center justify-content-center gap-2">
+                           <i class="bi bi-github"></i>
+                           <span>GitHub</span>
                         </a>
-                        <a href="#0" class="fsocial d-inline-flex align-items-center justify-content-center">
-                           Behance
+                        <a href="https://leetcode.com/u/anujvishwakarma07/" target="_blank"
+                           class="fsocial d-inline-flex align-items-center justify-content-center gap-2">
+                           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                              <path
+                                 d="M13.483 0a1.374 1.374 0 0 0-.961.414l-4.377 4.41a1.21 1.21 0 0 0-.001 1.713 1.21 1.21 0 0 0 1.717 0l4.376-4.41c.543-.547 1.57-.456 1.711.305.171.915-.592 1.642-1.39 1.642H3.142A3.136 3.136 0 0 0 0 7.212V20.79A3.136 3.136 0 0 0 3.142 23.93h17.716A3.136 3.136 0 0 0 24 20.79V7.212A3.136 3.136 0 0 0 20.858 4.07h-3.59c-.099 0-.173-.034-.232-.09l-.431-.41A1.358 1.358 0 0 0 15.65 3h-.848c-.029 0-.048.016-.06.027zM2.5 12c0-.276.224-.5.5-.5h.5c.276 0 .5.224.5.5v2.5c0 .276-.224.5-.5.5h-.5a.5.5 0 0 1-.5-.5V12zm5 0c0-.276.224-.5.5-.5h.5c.276 0 .5.224.5.5v4.5c0 .276-.224.5-.5.5h-.5a.5.5 0 0 1-.5-.5V12zm5 0c0-.276.224-.5.5-.5h.5c.276 0 .5.224.5.5v3.5c0 .276-.224.5-.5.5h-.5a.5.5 0 0 1-.5-.5V12zm5 0c0-.276.224-.5.5-.5h.5c.276 0 .5.224.5.5v5.5c0 .276-.224.5-.5.5h-.5a.5.5 0 0 1-.5-.5V12z" />
+                           </svg>
+                           <span>LeetCode</span>
                         </a>
-                        <a href="#0" class="fsocial d-inline-flex align-items-center justify-content-center">
-                           Dribble
+                        <a href="https://www.instagram.com/imanuj_07_/" target="_blank"
+                           class="fsocial d-inline-flex align-items-center justify-content-center gap-2">
+                           <i class="bi bi-instagram"></i>
+                           <span>Instagram</span>
                         </a>
                      </div>
                   </div>
@@ -480,12 +398,12 @@
                </a>
                <ul class="terms">
                   <li>
-                     <a href="#0">
+                     <a href="#">
                         Terms & Condition
                      </a>
                   </li>
                   <li>
-                     <a href="#0">
+                     <a href="#">
                         Privacy Policy
                      </a>
                   </li>
@@ -522,6 +440,41 @@
    <!--<< Wow Animation js >>-->
    <script src="assets/js/main.js"></script>
    <!--<< Main.js >>-->
+   <script src="assets/js/blog-fetch.js"></script>
+   <!--<< Blog Fetch js >>-->
+   <script>
+      $(document).ready(function() {
+         // Like Button Logic with Persistence
+         const blogId = new URLSearchParams(window.location.search).get('slug');
+         let likes = parseInt(localStorage.getItem('likes_' + blogId)) || 0;
+         $('#like-count').text(likes);
+         
+         if (localStorage.getItem('liked_' + blogId)) {
+            $('#like-btn i').removeClass('bi-heart').addClass('bi-heart-fill').css('color', '#ff4d4d');
+         }
+
+         $('#like-btn').on('click', function() {
+            if (!localStorage.getItem('liked_' + blogId)) {
+               likes++;
+               $('#like-count').text(likes);
+               localStorage.setItem('likes_' + blogId, likes);
+               localStorage.setItem('liked_' + blogId, 'true');
+               $(this).find('i').removeClass('bi-heart').addClass('bi-heart-fill').css('color', '#ff4d4d');
+               $(this).addClass('pulse');
+               setTimeout(() => $(this).removeClass('pulse'), 300);
+            }
+         });
+
+         // Reading Progress Bar Logic
+         $(window).on('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            $('#reading-progress-bar').css('width', scrolled + '%');
+         });
+      });
+   </script>
+
 </body>
 
 </html>
